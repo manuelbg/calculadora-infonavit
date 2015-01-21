@@ -38,7 +38,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 gem "devise"
 gem "jquery-rails"
 gem "haml", ">= 3.0.0"
