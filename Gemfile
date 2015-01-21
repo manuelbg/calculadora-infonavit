@@ -41,8 +41,6 @@ end
 
 gem "devise"
 gem "jquery-rails"
-gem "omniauth", "~> 0.2.0"
-gem "rails_admin", git: "git://github.com/sferik/rails_admin.git"
 gem "haml", ">= 3.0.0"
 gem "slim"
 gem "slim-rails"
