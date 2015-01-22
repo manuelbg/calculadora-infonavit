@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CalculadoraInfonavit</title>
+  <title>Calculadora de Credito Infonavit</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -25,8 +25,8 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Calcula tu credito <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><%= link_to "En VSM", "" %></li>
-              <li><%= link_to "En Pesos", "" %></li>
+              <li><%= link_to "En VSM", vsm_pages_path %></li>
+              <li><%= link_to "En Pesos", pesos_pages_path %></li>
             </ul>
           </li>
         </ul>

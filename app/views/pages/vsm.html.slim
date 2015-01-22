@@ -1,0 +1,30 @@
+.jumbotron
+  h1 Calcula tu Credito en VSM!
+  p Solo sigue los pasos que se te indican a continuación.
+.panel.panel-default
+  .panel-heading
+    h3 class="panel-title" Llena los siguientes datos
+  .panel-body
+    = form_tag calcular_vsm_pages_path, class: "form-horizontal"
+      .form-group
+        = label_tag :vsm_home_price, "Prestamo Inicial Infonavit", class: "col-sm-3"
+        .input-group.col-sm-2
+          span class="input-group-addon" $
+          = text_field "vsm", "home_price", class: "form-control", placeholder: "0.00"
+      .form-group
+        = label_tag :vsm_salary, "Sueldo Mensual", class: "col-sm-3"
+        .input-group.col-sm-2
+          span class="input-group-addon" $
+          = text_field "vsm", "salary", class: "form-control", placeholder: "0.00"
+      .form-group
+        = label_tag :vsm_interest_percentage, "Porcentaje de Interés", class: "col-sm-3"
+        .input-group.col-sm-1
+          = text_field "vsm", "interest_percentage", class: "form-control", placeholder: "12"
+          span class="input-group-addon" %
+      .form-group
+        = label_tag :vsm_employer_contribution, "Aportación Patronal", class: "col-sm-3"
+        .input-group.col-sm-3
+          span class="input-group-addon" $
+          = text_field "vsm", "employer_contribution", class: "form-control", placeholder: "0.00"
+          span class="input-group-addon" (Mensual)
+      = submit_tag "Enviar", class: "btn btn-default"

@@ -1,5 +1,9 @@
 CalculadoraInfonavit::Application.routes.draw do
-  get "pages/index"
+  resources :pages, path: "calcula-tu-credito" do
+    get "vsm", on: :collection
+    post "calcular_vsm", on: :collection
+    get "pesos", on: :collection
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
